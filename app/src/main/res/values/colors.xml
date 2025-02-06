@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#13D4FA</color>
+
+    <color name="background_color">#F9F9F9</color> <!-- Light gray background -->
+    <color name="dark_grey">#707070</color>        <!-- Dark gray for text -->
+    <color name="blue">#2196F3</color>
+
+    <color name="errorColor">#D32F2F</color> <!-- Customize this -->
+
+    <!-- Primary Colors -->
+    <color name="primaryColorDark">#1565C0</color> <!-- Darker shade of blue -->
+    <color name="accentColor">#FF6F00</color> <!-- Accent orange color -->
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#000000</color> <!-- Black for primary text -->
+    <color name="textColorHint">#757575</color> <!-- Grey for hints -->
+    <color name="textColorWhite">#FFFFFF</color> <!-- White for text on dark backgrounds -->
+
+    <!-- Button Background Colors -->
+    <color name="buttonBackground">#FF6F00</color> <!-- Orange background -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- White text on buttons -->
+    <color name="image_overlay_color">#DD000000</color>
+    <color name="light_gray">#D3D3D3</color>
+
+</resources>

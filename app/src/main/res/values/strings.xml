@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">ShopEase</string>
+    <string name="logo_description">App Logo</string>
+    <string name="skipText">Skip</string>
+    <string name="nextText">Next</string>
+
+    <string name="onboarding_image_description">Onboarding Image</string>
+    <string name="onboarding_title">Title</string>
+    <string name="onboarding_description">Description</string>
+
+    <string name="login_image_description">Login Illustration</string>
+    <string name="login_title">Welcome Back</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="login_button">Login</string>
+    <string name="login_button_description">Tap to login</string>
+
+        <string name="register_image_description">Register Illustration</string>
+        <string name="register_title">Create an Account</string>
+        <string name="name_hint">Enter your name</string>
+        <string name="register_button">Sign Up</string>
+
+    <string name="navigate_to_sign_up">Don\'t have an account? Sign up here.</string>
+    <string name="navigate_to_sign_in">Already have an account? Sign in here.</string>
+
+    <string name="search_hint">Search for products</string>
+    <string name="cart_description">Cart</string>
+    <string name="current_location">Your Location</string>
+    <string name="eco_friendly">Eco-Friendly</string>
+    <string name="smart_devices">Smart Devices</string>
+    <string name="subscription_boxes">Subscription Boxes</string>
+    <string name="you_might_need">You Might Need</string>
+    <string name="home">Home</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="profile">Profile</string>
+    <string name="banner_eco_friendly">Eco-Friendly Products</string>
+    <string name="banner_smart_devices">Smart Devices</string>
+    <string name="featured_products">Featured Products</string>
+    <string name="categories">Categories</string>
+    <string name="search_icon">search...</string>
+    <string name="chat">Chat</string>
+    <string name="banner_image">Smart Devices</string>
+
+    <string name="sample_product">Sample Product</string>
+    <string name="sample_price">$10.00</string>
+    <string name="product_image_desc">Image of the product</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_picture">Profile Picture</string>
+    <string name="change_picture">Change Profile Picture</string>
+    <string name="first_name">First Name</string>
+    <string name="first_name_hint">Enter your first name</string>
+    <string name="last_name">Last Name</string>
+    <string name="last_name_hint">Enter your last name</string>
+    <string name="email">Email</string>
+    <string name="address_hint">Enter your address</string>
+    <string name="set_location">Set Location</string>
+    <string name="save">Save</string>
+    <string name="wishlist_description">View your wishlist</string>
+    <string name="map">Map View Goes Here</string>
+
+    <string name="mapWelcome">Welcome to ShopEase!</string>
+
+    <string name="back">Back</string>
+
+    <string name="details_tab">Details</string>
+    <string name="reviews_tab">Reviews</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="reviews">reviews</string>
+
+    <string name="cart_title">My Cart</string>
+    <string name="total_price">Total Price: </string>
+    <string name="checkout">Checkout</string>
+
+    <!-- Checkout Screen -->
+    <string name="checkout_title">Checkout</string>
+    <string name="place_order">Place Order</string>
+
+    <string name="confirm_order">Order Confirmed!</string>
+    <string name="order_placed_success">Your order has been successfully placed.</string>
+
+    <!-- Quantity Controls -->
+    <string name="increase_quantity">Increase Quantity</string>
+    <string name="decrease_quantity">Decrease Quantity</string>
+
+    <!-- Accessibility -->
+    <string name="cart_product_image_desc">Product Image in Cart</string>
+
+
+</resources>
