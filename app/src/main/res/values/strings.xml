@@ -86,5 +86,16 @@
     <!-- Accessibility -->
     <string name="cart_product_image_desc">Product Image in Cart</string>
 
+    <string name="welcome_seller">Welcome, Seller!</string>
+    <string name="manage_products">Manage Products</string>
+    <string name="manage_orders">Manage Orders</string>
+    <string name="check_messages">Check Messages</string>
+    <string name="logout">Logout</string>
+
+    <string name="welcome_admin">Welcome, Admin!</string>
+    <string name="manage_users">Manage Users</string>
+    <string name="manage_sellers">Manage Sellers</string>
+    <string name="view_orders">View Orders</string>
+
 
 </resources>

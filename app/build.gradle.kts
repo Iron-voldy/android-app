@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    // Apply the Google Services plugin
+    id("com.google.gms.google-services") version "4.3.10" apply false // This will apply the plugin
 }
 
 android {
@@ -40,30 +42,22 @@ android {
 }
 
 dependencies {
-    // ViewPager2 for onboarding screens
-    implementation("androidx.viewpager2:viewpager2:1.0.0")
-    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
-
-    // Material Design components
-    implementation("com.google.android.material:material:1.12.0")
-
-    // Firebase Authentication
+    // Firebase dependencies
     implementation("com.google.firebase:firebase-auth:22.0.0")
+    implementation("com.google.firebase:firebase-database:20.2.0")
+    implementation("com.google.firebase:firebase-core:21.0.0")
 
-    // Google Sign-In for Authentication
+    // Other dependencies
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.google.android.material:material:1.12.0")
     implementation("com.google.android.gms:play-services-auth:20.6.0")
-
-    // Google Map
-    implementation ("com.google.android.gms:play-services-maps:18.1.0")
-    implementation ("com.google.android.gms:play-services-location:21.0.1")
-    implementation ("com.google.android.gms:play-services-maps:18.1.0")
-    implementation ("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
 
     // Core Android libraries
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation ("androidx.viewpager2:viewpager2:1.0.0")
-
 
     // Jetpack Compose libraries
     implementation(libs.androidx.activity.compose)
