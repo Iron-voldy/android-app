@@ -1,42 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Permissions -->
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <!-- Declare hardware usage -->
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
-
-    <!-- Queries for Android 11+ Package Visibility -->
-    <queries>
-        <intent>
-            <action android:name="android.media.action.IMAGE_CAPTURE" />
-        </intent>
-        <intent>
-            <action android:name="android.intent.action.PICK" />
-            <data android:mimeType="image/*" />
-        </intent>
-    </queries>
-
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShopEase"
         tools:targetApi="31">
-
-        <!-- Google Maps API Key -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyACYyb_jOyyC5Xm4hupLNHh6wqRKBsl9MM" />
 
         <!-- Splash Activity -->
         <activity
@@ -49,9 +21,9 @@
             </intent-filter>
         </activity>
 
-        <!-- Login Activity -->
+        <!-- Onboarding Activity -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".OnboardingActivity"
             android:exported="true"
             android:theme="@style/Theme.ShopEase" />
 
@@ -61,9 +33,9 @@
             android:exported="true"
             android:theme="@style/Theme.ShopEase" />
 
-        <!-- Onboarding Activity -->
+        <!-- Login Activity -->
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.ShopEase" />
 
@@ -73,33 +45,15 @@
             android:exported="true"
             android:theme="@style/Theme.ShopEase" />
 
-        <!-- User Profile Activity -->
+        <!-- Seller Dashboard Activity -->
         <activity
-            android:name=".UserProfileActivity"
+            android:name=".seller.SellerDashboardActivity"
             android:exported="true"
             android:theme="@style/Theme.ShopEase" />
 
-        <!-- Map Activity -->
+        <!-- Admin Dashboard Activity -->
         <activity
-            android:name=".MapActivity"
-            android:exported="true"
-            android:theme="@style/Theme.ShopEase" />
-
-        <!-- Product Detail Activity -->
-        <activity
-            android:name=".ProductDetailActivity"
-            android:exported="true"
-            android:theme="@style/Theme.ShopEase" />
-
-        <!-- Cart Activity -->
-        <activity
-            android:name=".CartActivity"
-            android:exported="true"
-            android:theme="@style/Theme.ShopEase" />
-
-        <!-- Checkout Activity -->
-        <activity
-            android:name=".CheckoutActivity"
+            android:name=".admin.AdminDashboardActivity"
             android:exported="true"
             android:theme="@style/Theme.ShopEase" />
 
