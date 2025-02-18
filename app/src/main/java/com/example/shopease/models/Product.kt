@@ -1,7 +1,11 @@
+// Product.kt
 package com.example.shopease.models
 
 data class Product(
-    val name: String,
-    val price: String,
-    val imageResId: Int // Resource ID for the product image
+    var id: String = "",
+    var name: String = "",
+    var price: Double = 0.0,
+    var imageUrl: String = "",
+    var description: String = "",
+    var category: String = ""
 )

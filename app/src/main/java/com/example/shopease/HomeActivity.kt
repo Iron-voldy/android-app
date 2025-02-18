@@ -1,3 +1,4 @@
+// HomeActivity.kt
 package com.example.shopease
 
 import android.content.Intent
@@ -9,9 +10,14 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.shopease.adapters.BannerAdapter
 import com.example.shopease.adapters.ProductAdapter
+import com.example.shopease.repository.FirebaseRepository
 import com.example.shopease.models.Product
 
 class HomeActivity : AppCompatActivity() {
+
+    private lateinit var productAdapter: ProductAdapter
+    private val firebaseRepository = FirebaseRepository()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
@@ -23,11 +29,12 @@ class HomeActivity : AppCompatActivity() {
 
         // Set up the featured product list
         val featuredList: RecyclerView = findViewById(R.id.featuredList)
-        val productList = getSampleProducts()
-
-        val productAdapter = ProductAdapter(this, productList) // Pass the context for navigation
+        productAdapter = ProductAdapter(this, mutableListOf())
         featuredList.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         featuredList.adapter = productAdapter
+
+        // Fetch products from Firebase
+        fetchProducts()
 
         // Navigate to Profile Activity
         val profileButton: ImageView = findViewById(R.id.profileButton)
@@ -36,7 +43,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // 🚀 Navigate to Cart Activity when clicking Cart Icon
+        // Navigate to Cart Activity
         val cartButton: ImageView = findViewById(R.id.cartButton)
         cartButton.setOnClickListener {
             val intent = Intent(this, CartActivity::class.java)
@@ -44,13 +51,11 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    private fun getSampleProducts(): List<Product> {
-        return listOf(
-            Product("Eco-Friendly Bottle", "$15.00", R.drawable.ic_eco_friendly),
-            Product("Smart Lock", "$45.00", R.drawable.ic_smart_devices),
-            Product("Subscription Box", "$25.00", R.drawable.ic_subscription_boxes),
-            Product("Reusable Bag", "$10.00", R.drawable.ic_eco_friendly),
-            Product("Smart Light", "$35.00", R.drawable.ic_smart_devices)
-        )
+    private fun fetchProducts() {
+        firebaseRepository.fetchProducts { products ->
+            runOnUiThread {
+                productAdapter.updateProducts(products)
+            }
+        }
     }
 }
