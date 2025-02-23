@@ -31,17 +31,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
 
-    <!-- Input Fields and Register Button -->
+    <!-- First Name Field -->
     <EditText
-        android:id="@+id/nameField"
+        android:id="@+id/firstNameField"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:hint="@string/name_hint"
+        android:hint="Enter First Name"
         android:backgroundTint="@android:color/white"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@id/registerTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Last Name Field -->
+    <EditText
+        android:id="@+id/lastNameField"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:hint="Enter Last Name"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/firstNameField"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
@@ -56,7 +72,7 @@
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/darker_gray"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@id/nameField"
+        app:layout_constraintTop_toBottomOf="@id/lastNameField"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
@@ -91,15 +107,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintWidth_percent="0.8" />
 
-    <!-- Navigate to Sign In -->
+    <!-- Navigate to Sign In (FIXED) -->
     <TextView
         android:id="@+id/signInText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/navigate_to_sign_in"
+        android:text="I already have an account"
+        android:textSize="18sp"
         android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/button_background"
         app:layout_constraintTop_toBottomOf="@id/registerButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.8"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

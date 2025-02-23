@@ -32,4 +32,87 @@
 
     <color name="logout_button_color">#FF3B30</color> <!-- Red color for logout button -->
 
+    <!-- Primary Brand Color -->
+    <color name="primaryDark">#1976D2</color>   <!-- Material Blue 700 -->
+    <color name="primaryLight">#BBDEFB</color>  <!-- Material Blue 100 -->
+
+    <!-- Text Colors -->
+    <color name="dark_text">#1A1A1A</color>     <!-- Almost Black -->
+    <color name="gray_text">#757575</color>     <!-- Medium Gray -->
+    <color name="light_text">#FFFFFF</color>    <!-- White -->
+
+    <!-- Background Colors -->
+    <color name="light_background">#F5F5F5</color>  <!-- Light Gray Background -->
+    <color name="surface_color">#FFFFFF</color>     <!-- Card Background -->
+
+    <!-- Divider & Border Colors -->
+    <color name="divider_gray">#E0E0E0</color>     <!-- Light Gray Divider -->
+    <color name="stroke_gray">#BDBDBD</color>      <!-- Medium Gray Stroke -->
+
+    <!-- State Colors -->
+    <color name="error_red">#F44336</color>        <!-- Material Red 500 -->
+    <color name="success_green">#4CAF50</color>    <!-- Material Green 500 -->
+
+    <!-- Additional Colors -->
+    <color name="icon_tint">#757575</color>        <!-- Default Icon Color -->
+    <color name="ripple_color">#1A000000</color>   <!-- Black Ripple Effect -->
+
+    <!-- Button States -->
+    <color name="button_pressed">#1A2196F3</color> <!-- Primary Color Pressed State -->
+
+    <color name="surface_stroke">#79747E</color>
+    <color name="on_surface">#1D1B20</color>
+    <color name="on_surface_variant">#49454F</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_alpha_20">#332196F3</color>
+    <color name="error">#B00020</color>
+
+    <!-- Surface Colors -->
+    <color name="surface">#FFFBFE</color>
+    <color name="surface_container">#F3EDF7</color>
+    <color name="surface_variant">#E7E0EC</color>
+
+    <!-- Outline Colors -->
+    <color name="outline">#79747E</color>
+    <color name="outline_variant">#CAC4D0</color>
+
+    <!-- Text Colors -->
+    <color name="on_surface_medium">#605D66</color>
+
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+
+    <!-- Interaction Colors -->
+    <color name="ripple_primary">#1A6750A4</color>
+    <color name="hover_primary">#0F6750A4</color>
+
+    <color name="primary">#6750A4</color>
+    <color name="nav_item_color">@android:color/white</color>
+
+    <color name="primary_container">#BB86FC</color> <!-- Light purple for container -->
+    <color name="on_primary_container">#3700B3</color> <!-- Dark purple text on container -->
+
+    <!-- Primary Colors -->
+    <color name="primaryDarkColor">#FF388E3C</color>
+    <color name="primaryLightColor">#C8E6C9</color>
+
+    <!-- Text Colors -->
+    <color name="darkText">#FF212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="whiteText">#FFFFFFFF</color>
+    <color name="background_card">#F8F9FA</color> <!-- Light grayish background -->
+
+    <!-- Background Colors -->
+    <color name="screenBackground">#F5F5F5</color>
+    <color name="cardBackground">#FFFFFFFF</color>
+
+    <!-- Divider/Stroke -->
+    <color name="dividerColor">#1F000000</color>
+    <color name="strokeColor">#BDBDBD</color>
+
+    <!-- Icons -->
+    <color name="dark_gray">#757575</color> <!-- Dark gray text for hint -->
+    <color name="bottom_nav_item_color">#6200EE</color> <!-- Purple for icons & text -->
+    <color name="iconColor">#FF4CAF50</color>
 </resources>

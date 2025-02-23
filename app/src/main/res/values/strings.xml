@@ -97,5 +97,28 @@
     <string name="manage_sellers">Manage Sellers</string>
     <string name="view_orders">View Orders</string>
 
+    <string name="check_orders">Check Orders</string>
+    <string name="become_seller">Become Seller</string>
+
+    <string name="address">Address</string>
+    <string name="new_password">New Password</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="change_password">Change password</string>
+
+    <!-- ✅ Colors (Defined in `colors.xml`) -->
+    <string name="primary_color">#6200EE</string>
+    <string name="dark_grey">#757575</string>
+    <string name="white">#FFFFFF</string>
+    <string name="black">#000000</string>
+
+    <!-- ✅ Product Pricing Example -->
+    <string name="product_price">$89.99</string>
+    <string name="product_description">product description</string>
+
+
+    <!-- Icons and Accessibility -->
+    <string name="location_icon">Location Icon</string>
+    <string name="password_toggle">Toggle Password Visibility</string>
+    <string name="remove_item">Remove items</string>
 
 </resources>

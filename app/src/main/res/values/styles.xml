@@ -7,4 +7,64 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
+    <!-- Text Styles -->
+    <style name="TextAppearance.InputLabel" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+
+    <style name="TextAppearance.InputText" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <!-- Seller App Theme -->
+    <style name="Theme.SellerApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOutline">@color/outline</item>
+        <item name="materialButtonStyle">@style/Widget.SellerApp.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.SellerApp.Button.Outlined</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.SellerApp.Button" parent="Widget.Material3.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.SellerApp.Medium</item>
+    </style>
+
+    <style name="Widget.SellerApp.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Shape Styles -->
+    <style name="ShapeAppearance.SellerApp.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.ExtendedFab" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Widget.SellerApp.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:elevation">0dp</item>
+        <item name="titleCentered">true</item>
+        <item name="itemRippleColor">@color/primary_alpha_20</item>
+        <item name="android:actionMenuTextColor">@color/on_primary</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
 </resources>
